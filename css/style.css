@@ -1,0 +1,1409 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/e552a2fc2712954f8f6faaff4c750c5f?family=Sweet+Apricot');
+/* 
+font-family: "Alatsi", sans-serif;
+font-family: "Open Sans", sans-serif;
+font-family: 'Sweet Apricot', sans-serif; 
+font-family: "Teko", sans-serif;
+font-family: "Red Hat Display", sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eaeaea;
+    position: relative;
+}
+header{
+    background-color: #502D7D;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+}
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header div h1{
+    color: rgb(234, 234, 234);
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "Alatsi", sans-serif;
+    margin-left: 10px;
+}
+header img{
+    width: 40px;
+}
+header nav{
+    margin: auto 0;
+    display: flex;
+}
+header nav a{
+    color: #f9f9f9b8;
+    text-decoration: none;
+    font-family: "Alatsi", sans-serif;
+    margin-right: 20px;
+    transition: 0.2s ease-in-out;
+    padding-bottom: 4px;
+    font-size: 17px;
+    transition: 0.2s ease-in-out;
+}
+#nactive{
+    color: white;
+}
+#factive{
+    color: white;
+}
+header nav a:hover::after{
+    width: 100%;
+    height: 3px;
+    background-color: #F9F9F9;   
+}
+header nav a:hover{
+    color: #f9f9f9;
+}
+/* ASA - Groups Part  */
+#first{
+    background-image: url(/Banner/WhatsApp\ Image\ 2024-04-06\ at\ 10.06.43\ PM.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0px;
+    border-bottom: 2px solid white;
+    height: 87.5vh;
+}
+.grp{
+    display: flex;
+    flex-basis: 60%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grp img{
+    width: 500px;
+    margin-bottom: 20px;
+}
+.grp span{
+    color: #ffffff;
+    text-shadow: 1px 1px 5px #000000b5;
+    font-family: "Sweet Apricot";
+    width: 70%;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+.grp p{
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 1px 1px 10px #000000d9;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    width: 65%;
+}
+.grp-int{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+.sub-int{
+    height: fit-content;
+    width: 35%;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+    margin: 20px 20px 0px 0px;
+    background-color: white;
+    border-radius: 7px;
+    border-bottom: 5px solid #65399e;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px 1px #0000009d;
+
+}
+.sub-int:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px 1px #000000ba;
+}
+
+.sub-int img{
+    width: 170px;
+    margin-bottom: 20px;
+}
+.sub-int p{
+    width: 70%;
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 1px 1px 5px #00000068;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.sub-int a{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: #65399e;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+}
+.sub-int a i{
+    transition: 0.3s ease-in-out;
+}
+.sub-int a:hover{
+    padding: 10px 35px;
+    font-weight: 800;
+}
+.sub-int a:hover i{
+    transform: translateX(15px);
+}
+.style{
+    background-color: #65399e;
+    padding: 20px;
+}
+.style h1{
+    color: white;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+.int-banner{
+    background-color: #65399e;
+    padding: 10px 0px;
+}
+.int-banner h1{
+    text-align: center;
+    font-family: "Alatsi", sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+}
+.fea{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 50px;
+    gap: 10%;
+}
+.fea-content{
+    text-align: center;
+    width: 100%;
+    padding: 30px 0px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 1px #0000004e;
+    border-bottom: #65399e solid 5px;
+    border-radius: 7px;
+    transition: 0.1s ease-in-out;
+    position: relative;
+}
+
+.fea-content:hover{
+    box-shadow: 0px 0px 10px 1px #000000ba;
+    transform: translatey(-10px);
+}
+.fea-img{
+    margin: auto;
+    background-color: #65399e;
+    width: fit-content;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.fea-content h1{
+    width: fit-content;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+}
+.fea-content p{
+    font-family: "Open Sans", sans-serif;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+.fea-img img{
+    width: 60px;
+}
+.hr{
+    background-color: #65399e;
+    color: #F9F9F9;
+    font-size: 30px;
+    font-family: "Alatsi", sans-serif;
+    text-align: center;
+    padding: 10px 0px;
+}
+.maptxt{
+    text-align: center;
+}
+.maptxt h2{
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    padding: 20px 0px;
+}
+.maptxt h2 span{
+    color: #502D7D;
+    font-weight: 400;
+    font-size: 32px;
+}
+.asamap{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    justify-content:space-between;
+    background-color: #f9f9f9;
+    box-shadow: 1px 1px 5px 1px #00000071;
+    width: 92%;
+    margin-bottom: 60px;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+}
+.asamap iframe{
+    border: #65399eb6 solid 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 1px 1px 5px 1px #00000071;
+}
+.feedback{
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.feedback form{
+    border-left: 2px solid #502d7d2b;
+    padding: 30px 100px;
+}
+.feedback form h1{
+    color: #65399e;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-family: "Open Sans", sans-serif;
+}
+.feedback form p{
+    color: #1f1f1f;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+.feedback form input ,.feedback form textarea{
+    background-color: #ededed;
+    outline: none;
+    resize: none;
+    font-family: "Open Sans", sans-serif;
+    border: solid 1px #25252541;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 17px;
+    margin-top: 20px;
+    padding: 10px 10px 10px 25px;
+}
+.feedback form textarea::placeholder ,.feedback form input::placeholder{
+    color: #1e1e1e69;
+}
+.btn{
+    background-color: #65399e;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    border: solid 1px #25252541;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 17px;
+    margin-top: 20px;
+    padding: 10px 10px 10px 25px;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: #724ea0;
+}
+.grp-info{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.grp-info div{
+    display:flex;
+    align-items: center;
+}
+.grp-info div a i{
+    text-decoration: none;
+    color: #502D7D;
+    font-size: 35px;
+    margin-right: 70px;
+}
+.grp-info div p{
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    width: 70%;
+}
+.smh{
+    font-family: "Teko", sans-serif;
+    background: linear-gradient(0deg, rgba(191,149,246,1) 0%, #F9F9F9 100%);
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 35px;
+    color: rgb(33, 33, 33);
+    font-weight: 400;
+}
+.fh{
+    font-family: "Teko", sans-serif;
+    background: linear-gradient(0deg, #65399e 0%, rgba(191,149,246,1) 100%);
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 400;
+}
+#fourth{
+    display: flex;
+    flex-direction: column;
+}
+.sm-banner{
+    background-image: url(/Banner/asa-realtors-kausa-thane-property-consultants-z423o1i1hn.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+}
+.sm{
+    width: 100%;
+    background: linear-gradient(0deg, #502d7d9c 0%, rgba(101,57,158,1) 100%);
+    padding: 20px 40px 0px 40px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.yt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.yt iframe:hover{
+    transform:translateY(-20px);
+    box-shadow: 0px 0px 10px 1px #000000ba;
+}
+.yt iframe{
+    border-radius: 10px;
+    border: solid 3px #ffffff36;
+    transition: 0.2s ease-in-out;
+}
+.yt iframe:hover{
+    border-color: white;
+}
+.osm a i{
+    color: #ffffffad;
+    font-size: 40px;
+    transition: 0.2s ease-in-out;
+}
+.osm a i:hover{
+    transform: translateY(-10px);
+    color: #ffffff;
+    text-shadow: #ffffff8e 1px 0 10px;
+}
+.osm{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+}
+footer{
+    background-color: #d8d8d8;
+}
+.foot-container{
+    display: flex;
+    flex: 1;
+    padding: 40px 20px;
+    width: 100%;
+}
+.foot-logo{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logo1{
+    width: 180px;
+}
+.sub-logo{
+    display: flex;
+    justify-content: center;
+}
+.sub-logo img{
+    width: 80px;
+    margin-top: 20px;
+}
+.foot-content{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.sub-content h1{
+    font-family: "Open Sans", sans-serif;
+    color: #65399e;
+    font-size: 24px;
+}
+.sub-content ul{
+    list-style-type: none;
+    color: #1f1f1f;
+}
+.sub-content ul li{
+    font-family: "Open Sans", sans-serif;
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.cp{
+    background-color: #502D7D;
+    padding: 10px 0px;
+    text-align: center;
+}
+.cp span{
+    color: white;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ASA - Realtors   */
+.rl-banner{
+    height: 300px;
+    background-image: url(/Banner/WhatsApp\ Image\ 2024-03-25\ at\ 8.03.16\ PM.jpeg);
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    position: relative;
+}
+.rl-banner h1{
+    text-align: center;
+    font-family: "Alatsi", sans-serif;
+    color: white;
+    position: absolute;
+    font-weight: 500;
+    top: 30%;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+}
+.rl-banner p{
+    width: fit-content;
+    font-size: 18px;
+    width: 70%;
+    top: 45%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 0px 20px;
+    margin-bottom: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+}
+#b-banner{
+    background-image: url(/Banner/WhatsApp\ Image\ 2024-04-05\ at\ 10.44.09\ PM.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-bottom: solid #502d7da3 3px;
+}
+.rl-content{
+    z-index: 1;
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    box-shadow: 0px 6px 10px 1px #00000039;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.rl-content ul{
+    border-bottom-right-radius: 10px;
+    display: flex;
+    list-style-type: none;
+}
+.rl-content ul li{  
+    padding: 15px 0px;
+}
+.brd-r{
+    border-right: 1px solid rgba(0, 0, 0, 0.185);
+}
+.rl-content ul li a{
+    font-size: 22px;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: #65399e;
+    border-bottom: solid 3px transparent;
+    font-family: "Red Hat Display", sans-serif;
+    transition: 0.2s ease-in-out;
+    font-weight: 500;
+}
+.rl-content ul li a:hover{
+    color: #65399e;
+    border-bottom: 3px solid #65399e;
+}
+#active{
+    border-bottom: 3px solid #65399e;
+}
+#rl-sec{
+    padding: 60px 0px;
+}
+.feat-container{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.feat-container div{ 
+    width: 480px;
+    height: fit-content;
+    text-align: center;
+    border-radius: 10px;
+}
+.feat-container div h1{
+    width: fit-content;
+    margin: auto;
+    padding: 10px 50px;
+    color: #65399e;
+    font-family: "Alatsi", sans-serif;
+    margin-bottom: 30px;
+}
+.feat-container div img{
+    border: solid 2px #502D7D;
+    border-radius: 10px;
+    max-width: 100%;
+    height: 252px;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px 1px #0000006c;
+}
+.buy-p-content{
+    padding: 20px 0px;
+    position: relative;
+} 
+.buy-p-content h1{
+    font-family: "Alatsi", sans-serif;
+    margin: auto;
+    width: fit-content;
+    color: #65399e;
+    font-size: 27px;
+    font-weight: 500;
+    padding: 10px 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #65399e;
+}
+.sub-b-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.sub-b-content button{
+    cursor: pointer;
+    width: 40%;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: solid 1px #65399e;
+    font-size: 22px;
+    color: #65399e;
+    font-family: "Red Hat Display", sans-serif;
+    transition: 0.2s ease-out;
+    font-weight: 500;
+}
+#res{
+    background-color: #65399e;
+    color: white;
+}
+
+.slider-container-res, .slider-container-com{
+    width: 80%;
+    display: flex;
+    overflow-x: scroll;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+.slider-container-com{
+    display: none;
+}
+.slider-container-res::-webkit-scrollbar,.slider-container-com::-webkit-scrollbar{
+    display: none;
+}
+.slider-container-res div,.slider-container-com div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.slider-container-res div img, .slider-container-com div img{
+    height: 252px;
+    width: 100%;
+    border-radius: 10px;
+}
+.slides{
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.slides div{
+    width: 13px;
+    background-color: #65399e7d;
+    height: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#slactive{
+    background-color: #65399e;
+    width: 15px;
+    height: 15px;
+}
+.prevbtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(130%);
+    background-color: #65399ee7;
+    border:none;
+    color: white;
+    font-size: 27px;
+    padding: 10px 20px;   
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-left: 40px;
+}
+.prevbtn:hover ,.nextbtn:hover{
+    background-color: #65399e;
+}
+.nextbtn{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(130%);
+    background-color: #65399ee7;
+    border:none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 27px;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+#rl-fifth{
+    position: relative;
+    margin-bottom: 40px;
+}
+#th{
+    font-family: "Alatsi", sans-serif;
+    margin: auto;
+    width: fit-content;
+    color: #65399e;
+    font-size: 27px;
+    font-weight: 500;
+    padding: 10px 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #65399e;
+}
+.tes-container{
+    width: 80%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    margin: auto;
+}
+.tes-container::-webkit-scrollbar{
+    display: none;
+}
+.slide{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.tes-content{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    background: linear-gradient(90deg, rgba(210,188,238,1) 55%, rgb(146, 95, 214) 100%);
+    border-radius: 10px;
+}
+.sub-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.tes-img{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tes-img img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid white 3px;
+}
+.tes-content h1{
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.386);
+    font-family: "Alatsi", sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.tes-content i{
+    color: #65399e;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.tes-content p{
+    color: #502D7D;
+    width: 80%;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+
+.prevtes{
+    background-color: #65399e;
+    position: absolute;
+    padding: 20px 25px;
+    border: none;
+    font-size: 22px;
+    color: white;
+    border-radius: 50%;
+    left: 0;
+    top: 50%;
+    transform: translateY(20%);
+    margin-left: 30px;
+    cursor: pointer;
+}
+.nexttes{
+    background-color: #65399e;
+    position: absolute;
+    padding: 20px 25px;
+    border: none;
+    right: 0;
+    top: 50%;
+    transform: translateY(20%);
+    font-size: 22px;
+    color: white;
+    border-radius: 50%;
+    margin-right: 30px;
+    cursor: pointer;
+}
+#rl-sixth{
+    width: 100%;
+    background-image: url(/Banner/asa-realtors-kausa-thane-property-consultants-z423o1i1hn.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom: 3px white solid;
+}
+.yt-con h1{
+    font-family: "Alatsi", sans-serif;
+    margin: auto;
+    width: fit-content;
+    color: white;
+    font-size: 27px;
+    font-weight: 400;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.507);
+    padding: 10px 0px;
+    margin-bottom: 30px;
+}
+.yt-con{
+    background: linear-gradient(0deg, #502d7d9c 0%, rgba(101,57,158,1) 100%);
+    padding: 30px 0px;
+}
+.yt-res {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.yt-res iframe{
+    border-radius: 7px;
+    transition: 0.1s ease-in;
+    border: solid 2px white;
+}
+.yt-res iframe:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.553);
+}
+
+/* Buy Section */
+#bh{
+    position: relative;
+    
+}
+.b-h{
+    position: static;
+}
+.opacity{
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+    background-color: #0101012b;
+    display: none;
+}
+.filter{
+    background-color: white;
+    box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.164);
+    padding: 10px 0px;
+    transition: 0.1s ease-in;
+    display: flex;
+    justify-content: space-between;
+}
+.fil-down{
+    transition: 0.3s ease-in-out;
+}
+.fil-menu{
+    position: fixed;
+    background-color: white;
+    width: 80%;
+    transform: translateY(5%);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.164);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height:450px;
+    z-index: 2;
+    display: none;
+    border-radius: 10px;
+}
+
+.filter button{
+    background-color: #65399e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 15px;
+    font-family: "Red Hat Display", sans-serif;
+    margin-left: 20px;
+    border-radius:  7px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.filter button i{
+    margin-left: 10px;
+    font-weight: 600;
+}
+.filter nav{
+    margin: auto 0;
+    display: flex;
+    display: none;
+}
+.filter nav a{
+    color: #502D7D;
+    text-decoration: none;
+    font-family: "Alatsi", sans-serif;
+    margin-right: 20px;
+    transition: 0.2s ease-in-out;
+    padding-bottom: 4px;
+    transition: 0.2s ease-in-out;
+}
+.fix-filter{
+    position: fixed;
+    animation: trans 0.3s ease-in-out;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.b-banner{
+    background-image: url(/Banner/WhatsApp\ Image\ 2024-04-06\ at\ 10.33.00\ PM.jpeg);
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0px 6px 10px 1px #0000001a;
+}
+.b-content{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 40px;
+}
+#b-heading{
+    color: white;
+    background-color: #65399e;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px 0px;
+}
+.prop:nth-child(1){
+    margin-top: 70px;
+}
+.prop{
+    display: flex;
+    background-color: white;
+    box-shadow: 1px 1px 5px 1px #00000033;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.2s ease-in;
+    position: relative;
+    cursor: pointer;
+}
+.prop i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 30px;
+    font-size: 45px;
+    color: #fed907;
+}
+.prop-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.prop:hover{
+    box-shadow: 1px 1px 5px 1px #0000005b;
+}
+.prop-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prop-img img{
+    width: 384px;
+    height:288px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px #0000007c;
+}
+.prop-head,.prop-specs,.prop-det,.prop-call{
+    padding: 5px 20px;
+}
+.prop-specs{
+    display: flex;
+    justify-content: space-between;
+}
+.prop-head a:nth-child(3){
+    background-color: #a778e444;
+    color: #65399e;
+    border: solid 2px #724ea0;
+    transition: 0.2s ease-in-out;
+}
+.prop-call{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-evenly;
+}
+.prop h1{
+    font-family: "Alatsi", sans-serif;
+    color: #65399e;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.prop span,.prop a,.prop p{
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(46, 46, 46, 0.836);
+}
+.prop h1 span{
+    font-weight: 400;
+}
+.prop p{
+    width: 70%;
+}
+.prop-call a{
+    padding: 10px 60px;
+    border-radius: 6px;
+    background-color: #7545b3;
+    color: white;
+    font-weight: 700;
+}
+.prop-call a:nth-child(1){
+    background-color: #a778e444;
+    color: #65399e;
+    border: solid 2px #724ea0;
+    transition: 0.2s ease-in-out;
+}
+.prop-call a:nth-child(2):hover{
+    background-color: #65399e;
+}
+.prop-call a:nth-child(1):hover{
+    background-color: #a778e47c;
+    color: #65399e;
+    border: solid 2px #724ea0;
+}
+.prop-load{
+    padding: 15px 300px;
+    font-size: 20px;
+    font-weight: 600;
+    width: fit-content;
+    margin: auto;
+    background-color: #a778e41b;
+    color: #65399e;
+    border: solid 2px #714ea090;
+    border-radius: 6px;
+    transition: 0.2s ease-in-out;
+}
+.prop-load:hover{
+    background-color: #a778e44a;
+    color: #65399e;
+    border: solid 2px #724ea0;
+}
+
+
+.hl{
+    position: absolute;
+    bottom: -50px;
+    height: fit-content;
+    display: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    transition: 0.3s ease-in-out
+}
+.hl ul li a{
+    font-size: 15px;
+}
+
+/* about us */
+
+#about-us{
+    padding: 100px 100px 30px 100px;
+    /* margin-top: 100px */
+}
+.sub-aboutus{
+    background-color: white;
+    padding: 40px 20px 40px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ab-logo{
+    width: 300px;
+    margin: auto;
+}
+.ab-icon{
+    width: 130px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.sub-ab-content{
+    display: flex;
+}
+.sub-ab-content div{
+    display: flex;
+    flex-direction: column;
+}
+.sub-ab-content div img{
+    margin: auto;
+}
+.sub-ab-content div p{
+    width: 90%;
+    font-size: 13px;
+    margin: auto;
+    margin-top: 20px;
+}
+.sub-aboutus div img{
+    width: 120px;
+}
+.sub-aboutus h2{
+    color: #65399e;
+    font-family: "Alatsi", sans-serif;
+    margin-top: 30px;
+    font-weight: 300;
+}
+.sub-aboutus p{
+    color: rgba(28, 28, 28, 0.699);
+    margin-top: 16px;
+    width: 80%;
+    font-family: "Alatsi", sans-serif;
+    font-family: "Open Sans", sans-serif;
+}
+
+.sub-aboutus h1{
+    color: #65399e;
+    font-family: "Alatsi", sans-serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.sub-aboutus h1::before{
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 40%;
+    height: 4px;
+    background-color: #65399e
+}
+.sub-aboutus span{
+    color: #65399e;
+    font-weight: 600;
+    margin-bottom: 20px
+}
+.sub-aboutus h4{
+    font-weight: 300;
+    margin-top: 5px;
+}
+.sub-ach{
+    width: 100%;
+}
+.sub-ach img{
+    width: 500px;
+    /* border: solid 10px #0b0b0b; */
+}
+
+
+/* Property */
+
+
+/* auth */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+#auth{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/Banner/WhatsApp\ Image\ 2024-04-06\ at\ 10.06.43\ PM.jpeg);
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+}
+.container{
+  position: relative;
+  max-width: 850px;
+  width: 100%;
+  background: #fff;
+  padding: 40px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.402);
+  perspective: 2700px;
+}
+#forcontain{
+  padding: 100px 30px;
+}
+.container .cover{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  z-index: 98;
+  transition: all 0.4s ease;
+  transform-origin: left;
+  transform-style: preserve-3d;
+}
+.container #flip:checked ~ .cover{
+    transform: translateX(-425px);  
+}
+ .container .cover .front,
+ .container .cover .back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.cover .back{
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.container .cover::before,
+.container .cover::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 12;
+}
+.container .cover::after{
+  opacity: 0.3;
+  /* transform: translateX(180deg); */
+  backface-visibility: hidden;
+}
+.container .cover img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+.container .cover .text{
+  position: absolute;
+  z-index: 130;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cover .text .text-1,
+.cover .text .text-2{
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.cover .text .text-2{
+  font-size: 15px;
+  font-weight: 500;
+}
+.container .forms{
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+.container .form-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-content .login-form,
+.form-content .signup-form{
+  width: calc(100% / 2 - 25px);
+}
+.forms .form-content .title{
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #502D7D;
+}
+.forms .form-content .title:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 25px;
+  background: #502D7D;
+}
+.forms .signup-form  .title:before{
+  width: 20px;
+}
+.forms .form-content .input-boxes{
+  margin-top: 30px;
+}
+.forms .form-content .input-box{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+.form-content .input-box input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid #65399e2b;
+  transition: all 0.3s ease;
+}
+.form-content .input-box input:focus,
+.form-content .input-box input:valid{
+  border-color: #502D7D;
+}
+.form-content .input-box i{
+  position: absolute;
+  color: #502D7D;
+  font-size: 17px;
+}
+.forms .form-content .text{
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+.forms .form-content .text a{
+  text-decoration: none;
+}
+.forms .form-content .text a:hover{
+  text-decoration: underline;
+}
+.forms .form-content .button{
+  color: #fff;
+  margin-top: 40px;
+}
+.forms .form-content .button input{
+  color: #fff;
+  background: #65399e;
+  border-radius: 6px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.forms .form-content .button input:hover{
+  background: #502D7D;
+}
+.forms .form-content label{
+  color: #65399e;
+  cursor: pointer;
+}
+.forms .form-content label:hover{
+  text-decoration: underline;
+}
+.forms .form-content .login-text,
+.forms .form-content .sign-up-text{
+  text-align: center;
+  margin-top: 25px;
+}
+.container #flip{
+  display: none;
+}
+@media (max-width: 730px) {
+  .container .cover{
+    display: none;
+  }
+  .form-content .login-form,
+  .form-content .signup-form{
+    width: 100%;
+  }
+  .form-content .signup-form{
+    display: none;
+  }
+  .container #flip:checked ~ .forms .signup-form{
+    display: block;
+  }
+  .container #flip:checked ~ .forms .login-form{
+    display: none;
+  }
+}
